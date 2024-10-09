@@ -1,9 +1,9 @@
 public class Movie implements Comparable<Movie> {
 
-    String title;
-    int releaseYear;
-    double ratingImdb;
-    int ageRating;
+    private String title;
+    private int releaseYear;
+    private double ratingImdb;
+    private int ageRating;
 
     public Movie(String title, int releaseYear, double ratingImdb, int ageRating) {
         this.title = title;
