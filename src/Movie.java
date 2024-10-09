@@ -14,12 +14,19 @@ public class Movie {
 
     // Getters
 
+    public String getTitle() {
+        return this.title;
+    }
+    public int getYear() {
+        return this.year;
+    }
+
     public double getRating() {
         return this.rating;
     }
 
-    public int getYear() {
-        return this.year;
+    public int getAgeRating() {
+        return ageRating;
     }
 
     // prints the details rather than data memory address

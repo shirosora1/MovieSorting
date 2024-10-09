@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
 
         System.out.println("Before sorting: " + movies);
 
-        movies.sort(new RatingComparator());
+        movies.sort(new AgeRatingComparator());
         System.out.println("After sorting: " + movies);
     }
 }
