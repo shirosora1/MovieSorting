@@ -1,24 +1,31 @@
-public class Movie implements Comparable<Movie> {
+public class Movie {
 
     private String title;
-    private int releaseYear;
-    private double ratingImdb;
+    private int year;
+    private double rating;
     private int ageRating;
 
-    public Movie(String title, int releaseYear, double ratingImdb, int ageRating) {
+    public Movie(String title, int year, double rating, int ageRating) {
         this.title = title;
-        this.releaseYear = releaseYear;
+        this.year = year;
+        this.rating = rating;
         this.ageRating = ageRating;
-        this.ratingImdb = ratingImdb;
     }
 
-    // Getter
+    // Getters
+
     public double getRating() {
-        return ratingImdb;
+        return this.rating;
     }
+
+    public int getYear() {
+        return this.year;
+    }
+
+    // prints the details rather than data memory address
 
     @Override
-    public int compareTo(Movie otherMovieRating) {
-        return Double.compare(getRating(), otherMovieRating.getRating());
+    public String toString() {
+        return title + " (" + year + ") - Rating: " + rating;
     }
 }
